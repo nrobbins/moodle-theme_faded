@@ -65,11 +65,14 @@ echo $OUTPUT->doctype() ?>
     </nav>
 <?php } ?>
 
+<div id="page-content">
+
 <section class="main-content <?php echo $bodycolumnclass ?>">
+
 <?php if ($hasnavbar) { ?>
     <nav class="breadcrumb"><?php echo $OUTPUT->navbar(); ?></nav>
 <?php } ?>
-    <div class="content-wrap">
+    <div class="content-wrap" id="region-main">
         <?php echo $OUTPUT->main_content() ?>
     </div>
 </section>
@@ -89,6 +92,8 @@ echo $OUTPUT->doctype() ?>
     </div>
 </div>
 <?php } ?>
+
+</div>
 
 <?php if ($hasfooter) { ?>
 <footer>
