@@ -1,0 +1,285 @@
+html{background-color:#234;background-image:url([[pix:theme|charcoal]]);}
+body{font-family:sans-serif;margin:0;padding:1% 0 2% 0;font-family:sans-serif;}
+h1, h2, h3, h4, h5, h6{margin:0;padding:0;}
+a, a:visited{color:#845;}
+a:hover, a:active{color:#458;text-decoration:none;}
+.skip, .skip-block, .accesshide{display:none;}
+td, th{
+border:0px solid #000;
+padding:0px;
+}
+ul{
+padding:0;
+margin:0;
+}
+ul li{
+list-style:none;
+}
+
+.icon img, img.iconsmall{padding:0.25em;}
+
+#page-wrap{overflow:hidden;position:relative;width:85%;margin:auto;min-width:600px;max-width:1200px;background-color:#eee;background-image:url([[pix:theme|subliminal]]);padding:0 1% 1% 1%;box-shadow:inset 0px 0px 15px #444;border-radius:7px;}
+
+.col, .feature, header, nav, footer .foot-wrap, a{border-radius:5px;}
+
+
+header{margin-top:1%;padding:1%;min-height:5em;background-color:#fff;box-shadow:2px 2px 10px #444;overflow:hidden;}
+.headermain{float:left;font-size:400%;}
+.headermenu{float:right;}
+
+nav.custommenu{
+padding:1%;
+background-color:#fff;
+margin-top:1%;
+margin-bottom:1%;
+overflow:hidden;
+box-shadow:2px 2px 10px #444;
+}
+#custom_menu_1{
+float:left;
+}
+.pagebutton{
+float:right;
+}
+.invisiblefieldset{margin:0;}
+
+.main-content{
+background-color:#fff;
+border-radius:5px;
+box-shadow:2px 2px 10px #444;
+overflow:hidden;
+}
+.content-wrap{
+padding:0 1em 1em 1em;
+}
+
+nav.breadcrumb{
+overflow:hidden;
+border-bottom:0.2em solid #456;
+border-radius:0;
+padding:0.5em 0.5em 0.3em 0.5em;
+margin-bottom:1em;
+}
+nav.breadcrumb ul{
+list-style:none;
+margin:0;
+}
+nav.breadcrumb li{
+display:block;
+float:left;
+}
+
+.col1-4, .col2-4l, .col3-4, .col4-4{
+float:left
+}
+.col1-4{
+width:24.25%;
+margin-left:1%;
+margin-bottom:1%;
+}
+body .main-content{
+width:49.5%;
+margin-right:0%;
+}
+.col2-4r{
+overflow:none;
+float:right;
+width:49.5%;
+margin-left:0.5%;
+}
+body.side-post-only .main-content, body.side-pre-only .main-content{
+width:74.5%;
+margin-right:0%;
+}
+body.content-only .main-content{
+width:100%;
+}
+body.side-post-only #region-pre, body.side-pre-only #region-post, body.content-only #region-pre, body.content-only #region-post{
+display:none;
+}
+
+.block{
+background-color:#fff;
+border-radius:5px;
+margin-bottom:1em;
+box-shadow:2px 2px 10px #444;
+overflow:hidden;
+}
+.block h2{
+padding:0.5em 0.5em 0 0.5em;
+border-bottom:0.125em solid #456;
+}
+.block_action{
+float:right;
+margin:0.25em 0.5em 0.25em 0.25em;
+}
+.block_action img{
+margin:0.25em 0.25em 0 0;
+}
+.block .block-hider-show{
+display:none;
+}
+.block .block-hider-hide{
+display:inline;
+}
+.block .content{
+padding:0.5em;
+}
+
+.block.hidden .content{
+display:none;
+}
+.block.hidden .block-hider-show{
+display:inline;
+}
+.block.hidden .block-hider-hide{
+display:none;
+}
+
+.blockmovetarget{
+margin:5px 0;
+display:block;
+width:98%;
+height:20px;
+border:2px dashed #444;
+}
+
+footer{
+clear:both;
+padding-top:1em;
+}
+footer .foot-wrap{
+padding:0.5em 1em;
+background-color:#fff;
+box-shadow:2px 2px 10px #444;
+}
+footer .logininfo{
+float:right;
+}
+footer .sitelink{
+float:left;
+}
+footer .siteinfo{
+clear:both;
+}
+
+/**
+ *Course Stuff
+ */
+.section{
+display:block;
+clear:both;
+margin:1em 0 0 0;
+padding:1em;
+}
+/**
+ *Custommenu Stuff
+ */
+.yui3-skin-sam .custommenu .yui3-menu-content, .yui3-skin-sam .custommenu .yui3-menu-horizontal .yui3-menu-label{
+border:0px solid #444;
+}
+.yui3-skin-sam .custommenu .yui3-menu-horizontal .yui3-menu-content, .yui3-skin-sam .custommenu .yui3-menu-horizontal .yui3-menu-label{
+background-image:none;
+border:0px solid #444;
+}
+.yui3-skin-sam .custommenu .yui3-menu-horizontal .yui3-menu-label{
+display:block;color:#845;margin-right:0.25em;text-decoration:underline;padding:0.3em 1em;background-image:none;border:0px solid #444;
+}
+.yui3-skin-sam .custommenu .yui3-menu-horizontal .yui3-menu-label:hover{
+background-color:#845;background-image:none;border:0px solid #444;color:#fff;text-decoration:none;box-shadow:2px 2px 10px #444;
+}
+.yui3-skin-sam .custommenu .yui3-menu-horizontal .custom_menu_submenu .yui3-menu-label{
+text-decoration:none;
+box-shadow:none;
+padding:0 1.5em 0 1em;
+margin:0;
+color:#000;
+}
+.yui3-skin-sam .custommenu .yui3-menu-content, .yui3-skin-sam .custommenu .yui3-menu .yui3-menu .yui3-menu-content{
+border-radius:6px;
+border:0px solid #444;background-image:none;
+padding:0;
+}
+.yui3-skin-sam .custommenu .yui3-menu .yui3-menu>.yui3-menu-content{
+box-shadow:2px 2px 10px #444;background-image:none;border:0px solid #444;
+}
+.yui3-skin-sam .custommenu .yui3-menu .yui3-menu .yui3-menuitem-content:hover, .yui3-skin-sam .custommenu .yui3-menu .yui3-menu .yui3-menu-label-menuvisible, .yui3-skin-sam .custommenu .yui3-menu-horizontal .yui3-menu-label-menuvisible{
+background-color:#845;color:#fff;text-decoration:none;box-shadow:none;background-image:none;border:0px solid #444;
+}
+.yui3-skin-sam .custommenu .yui3-menu-horizontal .yui3-menu-label-menuvisible{
+box-shadow:2px 2px 10px #444;
+}
+/**
+ *Dock Stuff
+ */
+#dock{
+display:block;
+position:absolute;
+top:0;
+left:0;
+}
+#dock .buttons_container{
+width:26px;
+background-color:#fff;
+border-radius:0 0 5px 0;
+box-shadow:2px 2px 10px #444;
+}
+.dockedtitle{
+height:auto!important;
+}
+#dockeditempanel{
+position:relative;
+left:26px;
+min-width:6em;
+background-color:#fff;
+border-radius:0 5px 5px 0;
+padding:1em;
+box-shadow:3px 3px 9px #444;
+}
+#dockeditempanel.dockitempanel_hidden{
+display:none;
+}
+#dock.nothingdocked{
+display:none!important;
+}
+/**
+ *Calendar Stuff
+ */
+
+@media screen and (max-aspect-ratio: 1/1) {
+#page-wrap{
+width:96%;
+}
+}
+@media screen and (max-aspect-ratio: 8/10) {
+    body{
+    margin:0;
+    padding:0 0 1% 0;
+    }
+    #page-wrap{
+    width:100%;
+    box-shadow:none;
+    border-radius:0;
+    margin:0;
+    padding:0;
+    background-color:#456;
+    }
+    nav li{
+    float:left;
+    width:32.2%;
+    margin:0px;
+    padding:0.5%;
+    }
+    .col{
+    float:none;
+    }
+    .col1-4, body .main-content, header, nav, .foot-wrap{
+    width:96%;
+    padding:1%;
+    margin:1% 1% 0 1%;
+    }
+    footer{
+    margin:0;
+    padding:0;
+    }
+}
