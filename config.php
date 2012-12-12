@@ -85,7 +85,7 @@ $THEME->layouts = array(
     // Server administration scripts.
     'admin' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'side-top'),
         'defaultregion' => 'side-pre',
     ),
     // My dashboard page
@@ -148,7 +148,7 @@ $THEME->layouts = array(
     // The pagelayout used for reports.
     'report' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'side-top'),
         'defaultregion' => 'side-pre',
     ),
     // The pagelayout used for safebrowser and securewindow.
