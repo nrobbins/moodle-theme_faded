@@ -26,4 +26,5 @@
 $string['pluginname'] = 'Faded';
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
+$string['region-side-top'] = 'Top';
 $string['choosereadme'] = 'If you are reading this, I forgot to add a description.';

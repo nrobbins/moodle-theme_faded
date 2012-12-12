@@ -69,8 +69,11 @@ display:block;
 float:left;
 }
 
-.col1-4, .col2-4l, .col3-4, .col4-4{
-float:left
+.col1-4{
+float:left;
+}
+.col2-4l, .col3-4, .col4-4{
+float:left;
 }
 .col1-4{
 width:24.25%;
@@ -243,9 +246,14 @@ display:none;
 display:none!important;
 }
 /**
- *Calendar Stuff
+ *Block Stuff
  */
-
+#region-top .yui3-dd-drop-active-valid{
+min-height:2em;
+}
+#region-post{
+clear:right;
+}
 @media screen and (max-aspect-ratio: 1/1) {
 #page-wrap{
 width:96%;

@@ -5,9 +5,11 @@ $hasfooter = (empty($PAGE->layout_options['nofooter']));
 
 $hassidepre = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
+$hassidetop = $PAGE->blocks->region_has_content('side-top', $OUTPUT);
 
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
+$showsidetop = ($hassidetop && !$PAGE->blocks->region_completely_docked('side-top', $OUTPUT));
 
 $bodycolumnclass = '';
 if($showsidepre && $showsidepost){
@@ -77,18 +79,26 @@ echo $OUTPUT->doctype() ?>
     </div>
 </section>
 
-<?php if ($hassidepre) { ?>
-<div id="region-pre" class="block-region col1-4">
+<?php //if ($hassidetop) { ?>
+<div id="region-top" class="block-region col2-4r">
     <div class="region-content">
-        <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+        <?php echo $OUTPUT->blocks_for_region('side-top') ?>
     </div>
 </div>
-<?php } ?>
+<?php //} ?>
 
 <?php if ($hassidepost) { ?>
 <div id="region-post" class="block-region col1-4">
     <div class="region-content">
         <?php echo $OUTPUT->blocks_for_region('side-post') ?>
+    </div>
+</div>
+<?php } ?>
+
+<?php if ($hassidepre) { ?>
+<div id="region-pre" class="block-region col1-4">
+    <div class="region-content">
+        <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
     </div>
 </div>
 <?php } ?>
