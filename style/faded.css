@@ -251,7 +251,7 @@ display:none!important;
 #region-top .yui3-dd-drop-active-valid{
 min-height:2em;
 }
-#region-post{
+#region-pre{
 clear:right;
 }
 @media screen and (max-aspect-ratio: 1/1) {

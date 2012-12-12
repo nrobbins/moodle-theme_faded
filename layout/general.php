@@ -79,18 +79,10 @@ echo $OUTPUT->doctype() ?>
     </div>
 </section>
 
-<?php //if ($hassidetop) { ?>
+<?php if ($hassidetop) { ?>
 <div id="region-top" class="block-region col2-4r">
     <div class="region-content">
         <?php echo $OUTPUT->blocks_for_region('side-top') ?>
-    </div>
-</div>
-<?php //} ?>
-
-<?php if ($hassidepost) { ?>
-<div id="region-post" class="block-region col1-4">
-    <div class="region-content">
-        <?php echo $OUTPUT->blocks_for_region('side-post') ?>
     </div>
 </div>
 <?php } ?>
@@ -99,6 +91,14 @@ echo $OUTPUT->doctype() ?>
 <div id="region-pre" class="block-region col1-4">
     <div class="region-content">
         <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+    </div>
+</div>
+<?php } ?>
+
+<?php if ($hassidepost) { ?>
+<div id="region-post" class="block-region col1-4">
+    <div class="region-content">
+        <?php echo $OUTPUT->blocks_for_region('side-post') ?>
     </div>
 </div>
 <?php } ?>
