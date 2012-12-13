@@ -24,11 +24,11 @@ $custommenu = $OUTPUT->custom_menu();
 $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custommenu));
 
 $bodyclasses = array();
-if ($hassidepre && !$hassidepost) {
+if ($showsidepre && $showsidepost != 1) {
     $bodyclasses[] = 'side-pre-only';
-} else if ($hassidepost && !$hassidepre) {
+} else if ($showsidepost && $showsidepre != 1) {
     $bodyclasses[] = 'side-post-only';
-} else if (!$hassidepost && !$hassidepre) {
+} else if ($showsidepost != 1 && $showsidepre != 1) {
     $bodyclasses[] = 'content-only';
 }
 
