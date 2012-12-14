@@ -15,6 +15,9 @@ margin:0;
 ul li{
 list-style:none;
 }
+body.jsenabled .hiddenifjs{
+display:none;
+}
 
 .icon img, img.iconsmall{padding:0.25em;}
 
@@ -129,6 +132,30 @@ display:block;
 clear:both;
 margin:1em 0 0 0;
 padding:1em;
+}
+#page-wrap .choosertitle, #page-wrap .chooserdialoguebody{
+display:none;
+}
+.chooserdialogue .option .typesummary{
+display:none;
+}
+.chooserdialogue .options{
+position:relative;overflow:auto;
+}
+.chooserdialogue .moduletypetitle{
+padding:0.125em;font-size:110%;fint-weight:bold;background-color:#ccc;width:45%;
+}
+.chooserdialogue .option{
+margin-bottom:0.5em;
+}
+.chooserdialogue .option.selected .typesummary{
+display:block;position:absolute;width:50%;top:1em;right:1em;
+}
+.chooserdialogue .submitbuttons{
+clear:both;overflow:hidden;
+}
+.dndupload-hidden{
+display:none;
 }
 /**
  *Custommenu Stuff
@@ -258,7 +285,7 @@ display:inline;
 display:none;
 }
 
-.blockmovetarget{
+.block-region .blockmovetarget{
 margin:5px 0;
 display:block;
 width:98%;
@@ -277,12 +304,29 @@ body.editing #region-top{
 display:block;
 min-width:49.5%;
 }
-body.editing .yui3-dd-drop-active-valid{
+body.editing .block-region .yui3-dd-drop-active-valid{
 border:2px dashed #444;
 margin-bottom:1em;
 }
-
-
+/**
+ *form stuff
+ */
+fieldset{
+border:1px solid #444;
+border-radius:5px;
+padding:1em;
+}
+fieldset fieldset{
+border:0px solid #444;
+padding:0;
+}
+fieldset legend{
+border-radius:5px;
+font-weight:bold;
+font-size:110%;
+margin-left:1em;
+padding:0 0.5em 0 0.5em;
+}
 
 
 
